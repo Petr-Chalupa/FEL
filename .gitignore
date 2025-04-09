@@ -1,0 +1,9 @@
+.vs/
+dist/
+__pycache__/
+build/
+venv/
+/out/
+*.o
+*.obj
+*.out
