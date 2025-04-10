@@ -11,6 +11,7 @@ _If you found this repo. because you need help with some homework, do not copy, 
 - [PRP - C](#prp---c)
 - [RPH - Python](#rph---python)
 - [PJV - Java](#pjv---java)
+- [FUP - Racket \& Haskel](#fup---racket--haskel)
 
 ### PRP - C
 - Command Line Tools ~ utilities demonstrating C programming concepts:
@@ -49,10 +50,22 @@ _If you found this repo. because you need help with some homework, do not copy, 
 <!-- 
 ### APO - Assembler & C
 ...
+-->
 
 ### FUP - Racket & Haskel
-...
+- Racket Image Processing ~ ASCII art generation from images (hw01):
+  - Image to grayscale matrix conversion
+  - Matrix scaling and transformation
+  - ASCII character mapping based on pixel intensity
+  - Support for custom character sets and block sizes
+- Racket SVG Generator ~ declarative SVG generation (hw02):
+  - Dynamic SVG element creation
+  - Support for basic shapes (circle, rect, line)
+  - Expression evaluation with environments
+  - Conditional rendering capabilities
+- Haskel Assignments _(TO BE IMPLEMENTED)_
 
+<!-- 
 ### PSIA - C++
 ...
 
