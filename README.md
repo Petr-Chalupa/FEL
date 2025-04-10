@@ -42,7 +42,7 @@ _If you found this repo. because you need help with some homework, do not copy, 
   - Calculator (console-based arithmetic operations)
   - CircularArrayQueue (queue implementation with fixed capacity)
   - SequenceStats (statistical calculations on number sequences)
-  - BruteForceAttacker (recursive password cracking implementation)
+  - BruteForceAttacker (recursive password cracking with a character set)
   - Tree & Node (binary tree with recursive traversal and string representation)
 - [2D Game Engine](https://github.com/Petr-Chalupa/FEL) - Semester project implementing a custom game engine _**(LINK TO DO)**_
 
