@@ -4,7 +4,7 @@ from random import randint
 from utils import write_classification_to_file, count_chars, add_dicts, subtract_dicts, count_uppercase, extract_links, parse_email
 
 
-class MyFilter:
+class Filter:
 
     limits = {
         "headers": 0,
