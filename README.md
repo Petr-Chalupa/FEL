@@ -5,7 +5,7 @@ This repository serves as a part of my portfolio. \
 Link to my university: [fel.cvut.cz](https://fel.cvut.cz)
 
 
-_If you found this repo. because you need help with some homework, do not copy, just take an inspiration :) \
+_If you found this repo. because you need help with some homework, do not copy, just get an inspiration :) \
 [LICENSE](LICENSE.md)_
 
 
@@ -14,6 +14,7 @@ _If you found this repo. because you need help with some homework, do not copy, 
 - [PRP - C](#prp---c)
 - [RPH - Python](#rph---python)
 - [PJV - Java](#pjv---java)
+- [APO - Assembler \& C](#apo---assembler--c)
 - [FUP - Racket \& Haskel](#fup---racket--haskel)
 
 ### PRP - C
@@ -50,10 +51,12 @@ _If you found this repo. because you need help with some homework, do not copy, 
   - Tree & Node (binary tree with recursive traversal and string representation)
 - [2D Game Engine](https://github.com/Petr-Chalupa/FEL) - Semester project implementing a custom game engine _**(LINK TO DO)**_
 
-<!-- 
 ### APO - Assembler & C
-...
--->
+- Assembly Assignments (RISC-V):
+  - Array manipulation and sorting algorithms in assembly (hw02.S, lab01.S, lab02.S)
+  - Fibonacci sequence generation on a pipelined CPU (hw03.S)
+- C Assignments:
+  - Image convolution using a mask (hw01.c)
 
 ### FUP - Racket & Haskel
 - Racket Image Processing ~ ASCII art generation from images (hw01):
