@@ -1,4 +1,4 @@
-# Simple program writing echoing on serial port
+# Simple program echoing on serial port
 
 .option norelax
 

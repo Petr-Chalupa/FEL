@@ -14,7 +14,7 @@ _If you found this repo. because you need help with some homework, do not copy, 
 - [PRP - C](#prp---c)
 - [RPH - Python](#rph---python)
 - [PJV - Java](#pjv---java)
-- [APO - Assembler \& C](#apo---assembler--c)
+- [APO - Assembly \& C](#apo---assembly--c)
 - [FUP - Racket \& Haskel](#fup---racket--haskel)
 
 ### PRP - C
@@ -51,7 +51,7 @@ _If you found this repo. because you need help with some homework, do not copy, 
   - Tree & Node (binary tree with recursive traversal and string representation)
 - [2D Game Engine](https://github.com/Petr-Chalupa/FEL) - Semester project implementing a custom game engine _**(LINK TO DO)**_
 
-### APO - Assembler & C
+### APO - Assembly & C
 - Assembly Assignments (RISC-V):
   - Array manipulation and sorting algorithms in assembly (hw02.S, lab01.S, lab02.S)
   - Serial port I/O echo implementation (lab03.S)
