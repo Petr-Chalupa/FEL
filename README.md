@@ -54,7 +54,9 @@ _If you found this repo. because you need help with some homework, do not copy, 
 ### APO - Assembler & C
 - Assembly Assignments (RISC-V):
   - Array manipulation and sorting algorithms in assembly (hw02.S, lab01.S, lab02.S)
+  - Serial port I/O echo implementation (lab03.S)
   - Fibonacci sequence generation on a pipelined CPU (hw03.S)
+  - _Note: All assembly code is tested in [QtRVSim](https://github.com/cvut/qtrvsim) - a RISC-V simulator_
 - C Assignments:
   - Image convolution using a mask (hw01.c)
 
