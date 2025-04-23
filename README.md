@@ -15,7 +15,9 @@ _If you found this repo. because you need help with some homework, do not copy, 
 - [RPH - Python](#rph---python)
 - [PJV - Java](#pjv---java)
 - [APO - Assembly \& C](#apo---assembly--c)
-- [FUP - Racket \& Haskel](#fup---racket--haskel)
+- [FUP - Racket \& Haskell](#fup---racket--haskell)
+- [PSIA - C++](#psia---c)
+- [AIAA - Python](#aiaa---python)
 
 ### PRP - C
 - Command Line Tools ~ utilities demonstrating C programming concepts:
@@ -59,24 +61,35 @@ _If you found this repo. because you need help with some homework, do not copy, 
   - _Note: All assembly code is tested in [QtRVSim](https://github.com/cvut/qtrvsim) - a RISC-V simulator_
 - C Assignments:
   - Image convolution using a mask (hw01.c)
+  - Simple LCD program (lab04.c)
+- _**(TO BE IMPLEMENTED)**_
 
-### FUP - Racket & Haskel
-- Racket Image Processing ~ ASCII art generation from images (hw01):
-  - Image to grayscale matrix conversion
-  - Matrix scaling and transformation
-  - ASCII character mapping based on pixel intensity
-  - Support for custom character sets and block sizes
-- Racket SVG Generator ~ declarative SVG generation (hw02):
-  - Dynamic SVG element creation
-  - Support for basic shapes (circle, rect, line)
-  - Expression evaluation with environments
-  - Conditional rendering capabilities
-- Haskel Assignments _(TO BE IMPLEMENTED)_
+### FUP - Racket & Haskell
+- Racket Assignments:
+  - Image Processing ~ ASCII art generation from images (hw01):
+    - Image to grayscale matrix conversion
+    - Matrix scaling and transformation
+    - ASCII character mapping based on pixel intensity
+    - Support for custom character sets and block sizes
+  - SVG Generator ~ declarative SVG generation (hw02):
+    - Dynamic SVG element creation
+    - Support for basic shapes (circle, rect, line)
+    - Expression evaluation with environments
+    - Conditional rendering capabilities
+- Haskell Assignments:
+  - λ-Calculus Evaluator (Hw03)
+    - Alpha conversion
+    - Substitution
+    - Beta reduction
+    - Includes functions for finding free variables and expression evaluation
+  - Parser of λ-programs (Hw04)
+    - _**(TO BE IMPLEMENTED)**_
 
-<!-- 
+
 ### PSIA - C++
-...
+- _**(TO BE IMPLEMENTED)**_
 
 ### AIAA - Python
-... This is from a different course outisde of my university ...
--->
+- _**(TO BE IMPLEMENTED)**_
+- _...This is from a different course outisde of my university..._
+
