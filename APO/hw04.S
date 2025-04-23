@@ -31,8 +31,8 @@ _start:
 	la   	a0, input_val
 	lw   	a0, 0(a0)          					# Number to print in hexadecimal to serial port
 	la		a1, SERIAL_PORT_BASE
-	addi	t0, zero, 0	  						# Loop index
-	addi	t1, zero, 32						# Loop upper bound
+	addi	t0, zero, 28	  					# Loop index
+	addi	t1, zero, -4						# Loop lower bound
     addi    t2, zero, 10						# Digit/letter border
 ready:
 	lw		a2, SERP_TX_ST_REG_o(a1)
@@ -46,10 +46,10 @@ convert:
     addi    t3, t3, 0x30        				# ASCII '0' is 0x30
 	j		print
 is_letter:
-    addi    t3, t3, 0x37        				# ASCII 'A' is 0x41
+    addi    t3, t3, 0x57        				# ASCII 'a' is 0x61
 print:
 	sb		t3, SERP_TX_DATA_REG_o(a1)			# Send to serial port
-    addi 	t0, t0, 4
+    addi 	t0, t0, -4
     bne		t0, t1, ready  
 	addi    t5, zero, 0x0A       				# ASCII newline (LF)
     sb      t5, SERP_TX_DATA_REG_o(a1) 			# Print newline
@@ -61,4 +61,3 @@ end_loop:
 
 # Specify location to show in memory window
 #pragma qtrvsim focus memory input_val 
-
