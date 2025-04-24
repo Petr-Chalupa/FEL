@@ -79,10 +79,10 @@ _If you found this repo. because you need help with some homework, do not copy, 
     - Conditional rendering capabilities
 - Haskell Assignments:
   - λ-Calculus Evaluator (Hw03)
-    - Alpha conversion
-    - Substitution
-    - Beta reduction
-    - Includes functions for finding free variables and expression evaluation
+    - Lambda calculus interpreter with normal order reduction
+    - Alpha conversion, beta reduction and capture-avoiding substitution
+    - Leftmost redex finding for proper evaluation order
+    - Expression representation for variables, applications, and abstractions
   - Parser of λ-programs (Hw04)
     - _**(TO BE IMPLEMENTED)**_
 
