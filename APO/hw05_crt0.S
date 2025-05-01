@@ -11,7 +11,7 @@ __start:
 _start:
 	.option push
 	.option norelax
-	la		gp, __global_pointer$
+	la      gp, __global_pointer$
 	.option pop
 	la      sp, __stack_end
 	addi    a0, zero, 0
