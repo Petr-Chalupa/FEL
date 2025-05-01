@@ -1,6 +1,6 @@
 #define _POSIX_C_SOURCE 200112L
 
-#define MAX_NUM_LEN 20
+#define MAX_NUM_LEN 21 // Maximum length: 19 digits for input, 1 digit for carry, 1 for \0
 
 #define SERIAL_PORT_BASE 0xffffc000
 #define SERP_RX_ST_REG_o 0x00
@@ -36,7 +36,7 @@ void receive_number(char *n, int *len) {
   volatile int *receiver_status = (volatile int *)(SERIAL_PORT_BASE + SERP_RX_ST_REG_o);
   volatile int *receiver_data = (volatile int *)(SERIAL_PORT_BASE + SERP_RX_DATA_REG_o);
 
-  while (*len < MAX_NUM_LEN - 1) {
+  while (*len < MAX_NUM_LEN - 2) { // -2 for addition carry and \0
     // Reciever not ready, wait
     while (!(*receiver_status & SERP_RX_ST_REG_READY_m))
       ;
