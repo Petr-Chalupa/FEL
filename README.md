@@ -62,6 +62,8 @@ _If you found this repo. because you need help with some homework, do not copy, 
   - _Note: All assembly code is tested in [QtRVSim](https://github.com/cvut/qtrvsim) - a RISC-V simulator_
 - C Assignments:
   - Image convolution using a mask (hw01.c)
+  - UART calculator for adding unsigned numbers, built without static libraries (hw05.c)
+    - _Note: hw05_crt0.S was provided as a minimal replacement for C runtime_
   - Simple LCD program (lab04.c)
 - _**(TO BE IMPLEMENTED)**_
 
