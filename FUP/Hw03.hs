@@ -74,31 +74,35 @@ findLE expr =
   case expr of
     Var v -> Nothing
     App e1 e2 ->
-      case findLE e1 of
-        Just leftmostApp -> Just leftmostApp
-        Nothing -> 
-          case findLE e2 of
-            Just leftmostApp -> Just leftmostApp
-            Nothing -> 
-              case e1 of
-                Lambda v body -> Just (e1, e2)
-                _ -> Nothing           
+      case e1 of
+        Lambda _ _ -> Just (e1, e2)  
+        _ -> case findLE e1 of
+               Just result -> Just result
+               Nothing -> findLE e2
     Lambda v body -> findLE body
+
+
+replaceRedex :: Expr -> (Expr, Expr) -> Expr -> Expr
+replaceRedex expr (lambda, arg) replacement =
+  case expr of
+    Var _ -> expr
+    App e1 e2 ->
+      if e1 == lambda && e2 == arg
+        then replacement
+        else case findLE e1 of
+               Just _ -> App (replaceRedex e1 (lambda, arg) replacement) e2
+               Nothing -> App e1 (replaceRedex e2 (lambda, arg) replacement)
+    Lambda v body -> Lambda v (replaceRedex body (lambda, arg) replacement)
 
 
 eval :: Expr -> Expr
 eval expr =
-  case expr of
-    Var x -> Var x
-    Lambda v body -> Lambda v (eval body)
-    App e1 e2 ->
-      let evE1 = eval e1
-          evE2 = eval e2
-      in case evE1 of
-        Lambda v body ->
-          let reduced = betaReduce evE1 evE2
-          in if reduced == App evE1 evE2 
-            then reduced
-            else eval reduced
-        _ -> App evE1 evE2
-        
+  case findLE expr of
+    Just (lambda@(Lambda v body), arg) ->
+      let reduced = betaReduce lambda arg
+      in eval (replaceRedex expr (lambda, arg) reduced)
+    Nothing ->
+      case expr of
+        Var _ -> expr
+        App e1 e2 -> App (eval e1) (eval e2)
+        Lambda v body -> Lambda v (eval body)

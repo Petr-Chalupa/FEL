@@ -62,6 +62,8 @@ _If you found this repo. because you need help with some homework, do not copy, 
   - _Note: All assembly code is tested in [QtRVSim](https://github.com/cvut/qtrvsim) - a RISC-V simulator_
 - C Assignments:
   - Image convolution using a mask (hw01.c)
+  - UART calculator for adding unsigned numbers, built without static libraries (hw05.c)
+    - _Note: hw05_crt0.S was provided as a minimal replacement for C runtime_
   - Simple LCD program (lab04.c)
 - _**(TO BE IMPLEMENTED)**_
 
@@ -79,10 +81,10 @@ _If you found this repo. because you need help with some homework, do not copy, 
     - Conditional rendering capabilities
 - Haskell Assignments:
   - λ-Calculus Evaluator (Hw03)
-    - Alpha conversion
-    - Substitution
-    - Beta reduction
-    - Includes functions for finding free variables and expression evaluation
+    - Lambda calculus interpreter with normal order reduction
+    - Alpha conversion, beta reduction and capture-avoiding substitution
+    - Leftmost redex finding for proper evaluation order
+    - Expression representation for variables, applications, and abstractions
   - Parser of λ-programs (Hw04)
     - _**(TO BE IMPLEMENTED)**_
 
