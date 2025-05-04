@@ -51,7 +51,7 @@ _If you found this repo. because you need help with some homework, do not copy, 
   - SequenceStats (statistical calculations on number sequences)
   - BruteForceAttacker (recursive password cracking with a character set)
   - Tree & Node (binary tree with recursive traversal and string representation)
-- [2D Game Engine](https://github.com/Petr-Chalupa/FEL) - Semester project implementing a custom game engine _**(LINK TO DO)**_
+- [2D Game Engine](https://github.com/Petr-Chalupa/JTileEngine) - Semester project implementing a custom 2D game engine in JavaFX
 
 ### APO - Assembly & C
 - Assembly Assignments (RISC-V):
