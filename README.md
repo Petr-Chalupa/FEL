@@ -16,7 +16,7 @@ _If you found this repo. because you need help with some homework, do not copy, 
 - [PJV - Java](#pjv---java)
 - [APO - Assembly \& C](#apo---assembly--c)
 - [FUP - Racket \& Haskell](#fup---racket--haskell)
-- [PSIA - C++](#psia---c)
+- [PSIA - C](#psia---c)
 - [AIAA - Python](#aiaa---python)
 
 ### PRP - C
@@ -88,9 +88,20 @@ _If you found this repo. because you need help with some homework, do not copy, 
   - Parser of λ-programs (Hw04)
     - _**(TO BE IMPLEMENTED)**_
 
-
-### PSIA - C++
-- _**(TO BE IMPLEMENTED)**_
+### PSIA - C
+- Network Programming ~ UDP File Transfer:
+    - CRC32 packet verification
+    - MD5 file integrity check
+    - Selective repeat and stop-and-wait for flow control
+    - Automatic retry on packet loss
+    - Configurable window size and packet size
+  - Client-Server Architecture
+    - Support for multiple clients
+    - Configurable ports and IP addresses
+  - File Operations
+    - Binary file transfer support
+    - Integrity verification
+  - _Note: [md5](https://github.com/Zunawe/md5-c) is a publicly available library_
 
 ### AIAA - Python
 - _**(TO BE IMPLEMENTED)**_
