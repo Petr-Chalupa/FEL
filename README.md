@@ -4,10 +4,8 @@
 This repository serves as a part of my portfolio. \
 Link to my university: [fel.cvut.cz](https://fel.cvut.cz)
 
-
 _If you found this repo. because you need help with some homework, do not copy, just get an inspiration :) \
 [LICENSE](LICENSE.md)_
-
 
 <!-- omit from toc -->
 ## Portfolio
