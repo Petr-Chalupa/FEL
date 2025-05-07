@@ -8,14 +8,15 @@
 #define MODE_SENDER 0
 #define MODE_RECEIVER 1
 //
+#define FILE_READ_CHUNK_SIZE (32 * 1024) // 32 KB
 #define CRC32_POLYNOMIAL 0xEDB88320
 #define CRC32_INITIAL 0xFFFFFFFF
 #define MD5_LEN 16
 //
 #define WINDOW_LEN 4
 #define PACKET_MAX_SIZE 1024
-#define PACKET_HEADER_LEN 5                                                                         // Including \0
-#define PACKET_DATA_LEN (PACKET_MAX_SIZE - PACKET_HEADER_LEN - sizeof(uint32_t) - sizeof(uint32_t)) // Offset + crc32
+#define PACKET_HEADER_LEN 5 // Including \0
+#define PACKET_DATA_LEN (PACKET_MAX_SIZE - PACKET_HEADER_LEN - sizeof(uint32_t) - sizeof(uint32_t))
 //
 #define PACKET_HEADER_NAME "NAME"
 #define PACKET_HEADER_SIZE "SIZE"

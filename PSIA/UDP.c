@@ -166,10 +166,22 @@ int loadFile(const char *filename, FileBuffer *buffer) {
   FILE *file = fopen(filename, "rb");
   if (file == NULL) return ERR_FILE_NOT_FOUND;
 
+  // Init MD5
+  MD5Context md5_context;
+  md5Init(&md5_context);
+
   int result = 0;
   while (true) {
-    int c = fgetc(file);
-    if (c == EOF) {
+    if (buffer->length + FILE_READ_CHUNK_SIZE > buffer->size) {
+      int fbAlloc_r = reallocateFileBuffer(buffer, buffer->size + FILE_READ_CHUNK_SIZE);
+      if (fbAlloc_r != 0) {
+        result = fbAlloc_r;
+        break;
+      }
+    }
+
+    size_t bytes_read = fread(buffer->data + buffer->length, 1, min(FILE_READ_CHUNK_SIZE, buffer->size - buffer->length), file);
+    if (bytes_read == 0) {
       if (feof(file)) {
         break; // Expected EOF
       } else {
@@ -177,24 +189,13 @@ int loadFile(const char *filename, FileBuffer *buffer) {
         break;
       }
     }
-
-    if (buffer->length + 1 > buffer->size) {
-      int fbAlloc_r = reallocateFileBuffer(buffer, -1);
-      if (fbAlloc_r != 0) {
-        result = fbAlloc_r;
-        break;
-      }
-    }
-    buffer->data[buffer->length++] = (char)c;
+    md5Update(&md5_context, (unsigned char *)(buffer->data + buffer->length), bytes_read);
+    buffer->length += bytes_read;
   }
 
   fclose(file);
 
-  // Calculate MD5
   if (result == 0) {
-    MD5Context md5_context;
-    md5Init(&md5_context);
-    md5Update(&md5_context, (unsigned char *)buffer->data, buffer->length);
     md5Finalize(&md5_context);
     memcpy(buffer->md5, md5_context.digest, MD5_LEN);
   }
@@ -297,14 +298,19 @@ int sendFileData(SOCKET socket, FileBuffer *buffer, const struct sockaddr_in *de
     }
 
     // Wait for ACKs
-    Packet response = {0};
+    uint64_t current_time = (uint64_t)time(NULL);
+    struct timeval tv = {0, PACKET_TIMEOUT_SR_MS};
+    fd_set readfds;
+    FD_ZERO(&readfds);
+    FD_SET(socket, &readfds);
     int fromlen = sizeof(*dest);
     struct sockaddr_in from_addr = *dest;
-    while (true) {
-      int r = recvfrom(socket, (char *)&response, sizeof(response), 0, (struct sockaddr *)&from_addr, &fromlen);
-      if (r <= 0) break;
 
-      if (strcmp(response.header, PACKET_HEADER_ACK) == 0) {
+    int select_result = select(socket + 1, &readfds, NULL, NULL, &tv);
+    if (select_result > 0) {
+      Packet response = {0};
+      int r = recvfrom(socket, (char *)&response, sizeof(response), 0, (struct sockaddr *)&from_addr, &fromlen);
+      if (r > 0 && strcmp(response.header, PACKET_HEADER_ACK) == 0) {
         size_t acked_seq = response.offset / PACKET_DATA_LEN;
         if (acked_seq >= base && acked_seq < next_seq_num) {
           window[acked_seq % WINDOW_LEN].ack = true;
@@ -316,7 +322,6 @@ int sendFileData(SOCKET socket, FileBuffer *buffer, const struct sockaddr_in *de
     }
 
     // Timeout and resend packets
-    uint64_t current_time = (uint64_t)time(NULL);
     for (size_t i = base; i < next_seq_num; i++) {
       size_t window_idx = i % WINDOW_LEN;
       if (!window[window_idx].ack && (current_time - window[window_idx].timestamp >= PACKET_TIMEOUT_SR_MS)) {
@@ -467,6 +472,10 @@ int receiveFile(SOCKET socket, struct sockaddr_in *from, FileBuffer *buffer) {
   u_long mode = 1;
   ioctlsocket(socket, FIONBIO, &mode);
 
+  // Init MD5
+  MD5Context md5_context;
+  md5Init(&md5_context);
+
   // Process DATA packets
   while (!got_stop) {
     int received = recvfrom(socket, (char *)&packet, sizeof(packet), 0, (struct sockaddr *)from, &fromlen);
@@ -504,6 +513,7 @@ int receiveFile(SOCKET socket, struct sockaddr_in *from, FileBuffer *buffer) {
         expected_seq_num++;
         size_t data_length = min(sizeof(packet.data), buffer->size - packet.offset);
         memcpy(buffer->data + packet.offset, packet.data, data_length);
+        md5Update(&md5_context, (unsigned char *)(packet.data), data_length);
         if (packet.offset + data_length > buffer->length) {
           buffer->length = packet.offset + data_length;
         }
@@ -525,9 +535,6 @@ int receiveFile(SOCKET socket, struct sockaddr_in *from, FileBuffer *buffer) {
   }
 
   // Verify MD5
-  MD5Context md5_context;
-  md5Init(&md5_context);
-  md5Update(&md5_context, (unsigned char *)buffer->data, buffer->length);
   md5Finalize(&md5_context);
   uint8_t *calculated_md5 = md5_context.digest;
   bool md5_match = true;
