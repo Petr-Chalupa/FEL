@@ -84,7 +84,9 @@ _If you found this repo. because you need help with some homework, do not copy, 
     - Leftmost redex finding for proper evaluation order
     - Expression representation for variables, applications, and abstractions
   - Parser of λ-programs (Hw04)
-    - _**(TO BE IMPLEMENTED)**_
+    - Parser implementation for λ-calculus expressions
+    - Support for variable definitions and substitutions
+    - _Note: Parser monad implementation was provided_
 
 ### PSIA - C
 - Network Programming ~ UDP File Transfer:
