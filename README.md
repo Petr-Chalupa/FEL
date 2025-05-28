@@ -85,6 +85,9 @@ _If you found this repo. because you need help with some homework, do not copy, 
     - Support for basic shapes (circle, rect, line)
     - Expression evaluation with environments
     - Conditional rendering capabilities
+  - Exam assigment - Manhattan distance (exam01.rkt):
+    - Assigns symbols to grid cells based on proximity to given points
+    - Handles ties and exact matches with special symbols
 - Haskell Assignments:
   - λ-Calculus Evaluator (Hw03)
     - Lambda calculus interpreter with normal order reduction
@@ -95,6 +98,10 @@ _If you found this repo. because you need help with some homework, do not copy, 
     - Parser implementation for λ-calculus expressions
     - Support for variable definitions and substitutions
     - _Note: Parser monad implementation was provided_
+  - Exam assigment - Minimum spanning tree (exam02.hs):
+    - Minimum spanning tree computation using Jarník's algorithm
+    - Custom graph and edge data types
+    - Handles undirected graphs by edge reversal
 
 ### PSIA - C
 - Network Programming ~ UDP File Transfer:
