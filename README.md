@@ -15,7 +15,6 @@ _If you found this repo. because you need help with some homework, do not copy, 
 - [APO - Assembly \& C](#apo---assembly--c)
 - [FUP - Racket \& Haskell](#fup---racket--haskell)
 - [PSIA - C](#psia---c)
-- [AIAA - Python](#aiaa---python)
 
 ### PRP - C
 - Command Line Tools ~ utilities demonstrating C programming concepts:
@@ -63,7 +62,16 @@ _If you found this repo. because you need help with some homework, do not copy, 
   - UART calculator for adding unsigned numbers, built without static libraries (hw05.c)
     - _Note: hw05_crt0.S was provided as a minimal replacement for C runtime_
   - Simple LCD program (lab04.c)
-- _**(TO BE IMPLEMENTED)**_
+- Pong Game (C):
+  - Implementation of the classic Pong game for the MZ-APO educational board
+  - Features:
+    - Real-time graphics rendering on the LCD
+    - Paddle and ball movement with collision detection
+    - Score tracking and high scores
+    - Modular code structure for hardware abstraction
+  - _Note: Only the following files are my original work:_
+    - `pong.c`, `utils.c`, `IO_utils.c`, `logo.c` and their respective header files in `include/`
+    - _Other files (e.g., hardware abstraction, font data) were provided as part of the assignment framework._
 
 ### FUP - Racket & Haskell
 - Racket Assignments:
@@ -102,8 +110,4 @@ _If you found this repo. because you need help with some homework, do not copy, 
     - Binary file transfer support
     - Integrity verification
   - _Note: [md5](https://github.com/Zunawe/md5-c) is a publicly available library_
-
-### AIAA - Python
-- _**(TO BE IMPLEMENTED)**_
-- _...This is from a different course outisde of my university..._
 
