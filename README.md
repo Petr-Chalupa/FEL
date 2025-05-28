@@ -98,7 +98,7 @@ _If you found this repo. because you need help with some homework, do not copy, 
     - Parser implementation for λ-calculus expressions
     - Support for variable definitions and substitutions
     - _Note: Parser monad implementation was provided_
-  - Exam assigment - Minimum spanning tree (exam02.hs):
+  - Exam assigment - Minimum spanning tree (Exam02.hs):
     - Minimum spanning tree computation using Jarník's algorithm
     - Custom graph and edge data types
     - Handles undirected graphs by edge reversal

@@ -1,4 +1,4 @@
-module SpanningTree (minSpanningTree, Graph (..), Edge (..)) where
+module Exam02 (minSpanningTree, Graph (..), Edge (..)) where
 import Data.List -- for sortOn
  
 data Edge a b = Edge { u :: a,
