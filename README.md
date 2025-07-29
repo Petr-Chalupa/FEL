@@ -111,7 +111,6 @@ _If you found this repo. because you need help with some homework, do not copy, 
     - Automatic retry on packet loss
     - Configurable window size and packet size
   - Client-Server Architecture
-    - Support for multiple clients
     - Configurable ports and IP addresses
   - File Operations
     - Binary file transfer support
