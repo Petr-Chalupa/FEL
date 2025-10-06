@@ -15,6 +15,9 @@ _If you found this repo. because you need help with some homework, do not copy, 
 - [APO - Assembly \& C](#apo---assembly--c)
 - [FUP - Racket \& Haskell](#fup---racket--haskell)
 - [PSIA - C](#psia---c)
+- [ALG - C](#alg---c)
+- [OSY - C](#osy---c)
+- [KEO](#keo)
 
 ### PRP - C
 - Command Line Tools ~ utilities demonstrating C programming concepts:
@@ -117,3 +120,25 @@ _If you found this repo. because you need help with some homework, do not copy, 
     - Integrity verification
   - _Note: [md5](https://github.com/Zunawe/md5-c) is a publicly available library_
 
+### ALG - C
+- Duplicate Number Finder (hw00.c):
+    - Training exercise
+- Park Designer (hw01.c):
+    - Optimizes park layout with specific constraints:
+      - Central area must contain minimum number of rocks
+      - Maximizes number of forest tiles in total area
+    - Uses prefix sum arrays for efficient area calculations
+
+### OSY - C
+- Shell Scripting:
+  - File System Path Processor (hw01.sh):
+    - Processes paths from stdin (prefixed with "PATH ")
+    - Optional .tgz archive creation (-z flag)
+  - _HW02.sh_
+- _XYZ_
+
+### KEO
+- PCB Project:
+  - Board design using KiCad
+  - Realization
+  - Documentation
