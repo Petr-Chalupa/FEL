@@ -134,7 +134,11 @@ _If you found this repo. because you need help with some homework, do not copy, 
   - File System Path Processor (hw01.sh):
     - Processes paths from stdin (prefixed with "PATH ")
     - Optional .tgz archive creation (-z flag)
-  - _HW02.sh_
+  - Text Processing Utilities (hw02.sh):
+    - PDF file listing with case-insensitive sorting
+    - Number-prefixed line filtering
+    - Sentence extraction and formatting
+    - C #include directive prefix manipulation
 - _XYZ_
 
 ### KEO
