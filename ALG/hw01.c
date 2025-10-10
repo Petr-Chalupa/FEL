@@ -47,10 +47,10 @@ int main() {
 void Error__throw(Error e) {
   switch (e) {
   case ERR_INVALID_INPUT:
-    fprintf(stderr, "Error: The input is invalid!");
+    fprintf(stderr, "Error: The input is invalid!\n");
     break;
   case ERR_MEM_ALLOC:
-    fprintf(stderr, "Error: There was an error allocating memory!");
+    fprintf(stderr, "Error: There was an error allocating memory!\n");
     break;
   }
 

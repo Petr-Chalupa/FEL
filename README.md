@@ -128,6 +128,11 @@ _If you found this repo. because you need help with some homework, do not copy, 
       - Central area must contain minimum number of rocks
       - Maximizes number of forest tiles in total area
     - Uses prefix sum arrays for efficient area calculations
+- Agent Placement (hw02.c):
+    - Optimizes agent placement in a graph:
+      - Type A scores based on occupied neighbors
+      - Type B scores based on unoccupied neighbors
+    - Uses backtracking with pruning optimizations
 
 ### OSY - C
 - Shell Scripting:
