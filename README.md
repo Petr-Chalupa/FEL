@@ -144,7 +144,12 @@ _If you found this repo. because you need help with some homework, do not copy, 
     - Number-prefixed line filtering
     - Sentence extraction and formatting
     - C #include directive prefix manipulation
-- _XYZ_
+- C programming:
+  - Process forking and piping (hw03):
+    - Parent-child process communication via pipes
+    - Random number generator with signal handling
+    - Integration with provided GCD calculator
+    - _Note: `nsd_src` (GCD calculator) was provided as part of the assignment_
 
 ### KEO
 - PCB Project:
