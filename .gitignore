@@ -8,3 +8,4 @@ venv/
 *.o
 *.obj
 *.out
+*.zip

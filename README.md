@@ -16,7 +16,7 @@ _If you found this repo. because you need help with some homework, do not copy, 
 - [FUP - Racket \& Haskell](#fup---racket--haskell)
 - [PSIA - C](#psia---c)
 - [ALG - C](#alg---c)
-- [OSY - C](#osy---c)
+- [OSY - Shell \& C](#osy---shell--c)
 - [KEO](#keo)
 
 ### PRP - C
@@ -133,8 +133,13 @@ _If you found this repo. because you need help with some homework, do not copy, 
       - Type A scores based on occupied neighbors
       - Type B scores based on unoccupied neighbors
     - Uses backtracking with pruning optimizations
+- Tree Path Finder (hw03.c):
+    - Finds longest valid path in a tri-colored tree:
+      - Path cannot contain 3 consecutive same-colored nodes
+    - Uses recursive DFS with path validation
+    - Queue-based tree construction from level-order input
 
-### OSY - C
+### OSY - Shell & C
 - Shell Scripting:
   - File System Path Processor (hw01.sh):
     - Processes paths from stdin (prefixed with "PATH ")
@@ -144,12 +149,16 @@ _If you found this repo. because you need help with some homework, do not copy, 
     - Number-prefixed line filtering
     - Sentence extraction and formatting
     - C #include directive prefix manipulation
-- C programming:
+- Unix Programming:
   - Process forking and piping (hw03):
     - Parent-child process communication via pipes
     - Random number generator with signal handling
     - Integration with provided GCD calculator
     - _Note: `nsd_src` (GCD calculator) was provided as part of the assignment_
+  - Producer-Consumer Threading (hw04):
+    - Multi-threaded word processing with shared list
+    - Mutex-protected stdout and list operations
+    - Conditional variables for synchronization
 
 ### KEO
 - PCB Project:
