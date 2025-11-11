@@ -159,6 +159,11 @@ _If you found this repo. because you need help with some homework, do not copy, 
     - Multi-threaded word processing with shared list
     - Mutex-protected stdout and list operations
     - Conditional variables for synchronization
+  - Factory Simulation (hw05):
+    - Command-driven factory simulator reading commands from stdin
+    - Worker threads process product steps at named places
+    - Synchronization with mutexes and condition variables
+    - Dynamic worker management and resource accounting
 
 ### KEO
 - PCB Project:
