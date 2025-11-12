@@ -164,6 +164,10 @@ _If you found this repo. because you need help with some homework, do not copy, 
     - Worker threads process product steps at named places
     - Synchronization with mutexes and condition variables
     - Dynamic worker management and resource accounting
+  - Hexadecimal Converter (hw06):
+    - Reads unsigned integers from stdin and prints them as hexadecimal
+    - Implementation using direct syscalls
+    - Built with no libc
 
 ### KEO
 - PCB Project:
