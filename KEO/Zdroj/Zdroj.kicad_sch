@@ -6081,7 +6081,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+		(property "Footprint" ""
 			(at 129.54 88.9 0)
 			(effects
 				(font
@@ -6430,7 +6430,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal"
 			(at 256.54 39.37 0)
 			(effects
 				(font
@@ -6503,7 +6503,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
 			(at 173.99 92.71 0)
 			(effects
 				(font
@@ -6817,7 +6817,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Radial_D16.0mm_H25.0mm_P7.50mm"
 			(at 69.5452 82.55 0)
 			(effects
 				(font
@@ -7169,7 +7169,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
 			(at 267.97 86.0552 0)
 			(effects
 				(font
@@ -7310,7 +7310,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
 			(at 214.9348 77.47 0)
 			(effects
 				(font
@@ -7517,7 +7517,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 92.71 115.57 0)
 			(effects
 				(font
@@ -7586,7 +7586,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 224.79 124.46 0)
 			(effects
 				(font
@@ -8088,7 +8088,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm"
 			(at 191.4652 92.71 0)
 			(effects
 				(font
@@ -8383,7 +8383,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal"
 			(at 281.94 111.76 0)
 			(effects
 				(font
@@ -8772,7 +8772,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
 			(at 154.94 152.4 0)
 			(effects
 				(font
@@ -8925,7 +8925,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 69.85 50.8 0)
 			(effects
 				(font
@@ -8995,7 +8995,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+		(property "Footprint" ""
 			(at 127.762 105.41 90)
 			(effects
 				(font
@@ -9482,7 +9482,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
 			(at 111.76 91.44 0)
 			(effects
 				(font
@@ -9569,7 +9569,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Radial_D6.3mm_H5.0mm_P2.50mm"
 			(at 105.1052 119.38 0)
 			(effects
 				(font
@@ -9637,7 +9637,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal"
 			(at 21.59 76.2 0)
 			(effects
 				(font
@@ -9774,7 +9774,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
 			(at 209.55 74.93 0)
 			(effects
 				(font
@@ -9861,7 +9861,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_Power_L25.0mm_W6.4mm_P30.48mm"
 			(at 242.57 113.538 90)
 			(effects
 				(font
@@ -10007,7 +10007,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Radial_D6.3mm_H5.0mm_P2.50mm"
 			(at 257.5052 104.14 0)
 			(effects
 				(font
@@ -10074,7 +10074,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
 			(at 109.22 102.5652 0)
 			(effects
 				(font
@@ -10212,7 +10212,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm"
 			(at 233.3752 62.23 0)
 			(effects
 				(font
@@ -10958,7 +10958,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+		(property "Footprint" ""
 			(at 180.34 100.33 0)
 			(effects
 				(font
@@ -11100,7 +11100,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 			(at 146.05 80.01 0)
 			(effects
 				(font
@@ -11235,7 +11235,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
 			(at 154.94 92.71 0)
 			(effects
 				(font
@@ -11323,7 +11323,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
 			(at 223.52 74.93 0)
 			(effects
 				(font
