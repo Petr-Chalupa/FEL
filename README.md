@@ -138,6 +138,11 @@ _If you found this repo. because you need help with some homework, do not copy, 
       - Path cannot contain 3 consecutive same-colored nodes
     - Uses recursive DFS with path validation
     - Queue-based tree construction from level-order input
+- Mouse vs Cat Path (hw04.c):
+    - Finds shortest "safe" path for a mouse while avoiding the cat:
+      - Graph nodes can be "noisy"; visiting noisy nodes alerts the cat
+      - Mouse must avoid positions reachable by the cat within constrained jumps
+    - Uses multi-state per node storage and BFS with pruning to return (distance, noisy_used) for optimal path
 
 ### OSY - Shell & C
 - Shell Scripting:
