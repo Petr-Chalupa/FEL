@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "${TITLE}")
-		(date "2025-11-16")
+		(date "2025-11-17")
 		(rev "${REV}")
 		(company "${AUTHOR}")
 	)
@@ -6376,16 +6376,16 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x03")
-		(at 256.54 39.37 90)
+		(at 256.54 39.37 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "1cd7e28e-657d-4c8c-90a3-d1a9ff85e5cc")
 		(property "Reference" "J3"
-			(at 261.62 38.0999 90)
+			(at 251.46 38.0999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6394,7 +6394,7 @@
 			)
 		)
 		(property "Value" "Q7"
-			(at 261.62 40.6399 90)
+			(at 251.46 40.6399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
