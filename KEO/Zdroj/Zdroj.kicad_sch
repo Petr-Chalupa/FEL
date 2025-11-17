@@ -1619,144 +1619,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R_Trim"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 2.54 -2.54 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "R_Trim"
-				(at -2.54 -0.635 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Trimmable resistor (preset resistor)"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R res resistor variable potentiometer trimmer"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_Trim_0_1"
-				(polyline
-					(pts
-						(xy -1.905 -1.905) (xy 1.905 1.905) (xy 2.54 1.27) (xy 1.27 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_Trim_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Diode:1N4001"
 			(pin_numbers
 				(hide yes)
@@ -3475,12 +3337,6 @@
 		(uuid "00739b34-5058-45a0-b39d-33de03cc792f")
 	)
 	(junction
-		(at 171.45 124.46)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0086e19d-2314-4447-803e-3edbf8e1c51f")
-	)
-	(junction
 		(at 275.59 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3581,6 +3437,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "42f19797-75d0-4b4e-a735-acae0d30b303")
+	)
+	(junction
+		(at 129.54 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "43ffc7ac-ea09-4172-a059-ad67152a6cd1")
 	)
 	(junction
 		(at 275.59 85.09)
@@ -3829,6 +3691,12 @@
 		(uuid "ded6c97a-4ea9-4c15-948b-152267116025")
 	)
 	(junction
+		(at 171.45 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dfcc2947-a3ad-41fd-9903-b412433c397b")
+	)
+	(junction
 		(at 33.02 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3872,7 +3740,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 124.46) (xy 104.14 124.46)
+			(xy 104.14 124.46) (xy 171.45 124.46)
 		)
 		(stroke
 			(width 0)
@@ -4022,7 +3890,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 101.6) (xy 119.38 101.6)
+			(xy 113.03 101.6) (xy 119.38 101.6)
 		)
 		(stroke
 			(width 0)
@@ -4212,7 +4080,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 101.6) (xy 104.14 101.6)
+			(xy 105.41 101.6) (xy 104.14 101.6)
 		)
 		(stroke
 			(width 0)
@@ -4542,7 +4410,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 109.22) (xy 129.54 111.76)
+			(xy 129.54 105.41) (xy 129.54 111.76)
 		)
 		(stroke
 			(width 0)
@@ -4582,6 +4450,16 @@
 	)
 	(wire
 		(pts
+			(xy 171.45 124.46) (xy 220.98 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a1e4dab-0162-4361-b53d-04c7edae4546")
+	)
+	(wire
+		(pts
 			(xy 58.42 59.69) (xy 33.02 59.69)
 		)
 		(stroke
@@ -4592,7 +4470,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 92.71) (xy 129.54 101.6)
+			(xy 129.54 92.71) (xy 129.54 97.79)
 		)
 		(stroke
 			(width 0)
@@ -4709,16 +4587,6 @@
 			(type default)
 		)
 		(uuid "7b172838-035d-4ecb-9e09-0f5d67f4110c")
-	)
-	(wire
-		(pts
-			(xy 220.98 124.46) (xy 171.45 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7cf9a887-b0db-4c7f-b190-daebe584efdb")
 	)
 	(wire
 		(pts
@@ -5202,6 +5070,16 @@
 	)
 	(wire
 		(pts
+			(xy 125.73 101.6) (xy 125.73 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c167513d-ac24-48cc-a381-aeb3d76f5676")
+	)
+	(wire
+		(pts
 			(xy 92.71 119.38) (xy 88.9 119.38)
 		)
 		(stroke
@@ -5449,6 +5327,16 @@
 			(type default)
 		)
 		(uuid "da06f71e-1a24-4ba4-95fc-8b46de061824")
+	)
+	(wire
+		(pts
+			(xy 125.73 105.41) (xy 129.54 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da36fa73-6967-4c87-b232-3e27cd7f0602")
 	)
 	(wire
 		(pts
@@ -5788,7 +5676,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Radial_D10.0mm_H12.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm"
 			(at 59.3852 123.19 0)
 			(effects
 				(font
@@ -6073,18 +5961,82 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Potentiometer")
-		(at 129.54 88.9 0)
-		(mirror y)
+		(lib_id "power:PWR_FLAG")
+		(at 171.45 124.46 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
+		(uuid "0ae64776-d992-458b-9a28-dc12e6e1da43")
+		(property "Reference" "#FLG01"
+			(at 171.45 126.365 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 171.45 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 171.45 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 171.45 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 171.45 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7f473934-9a42-4546-a493-0e530df680b1")
+		)
+		(instances
+			(project "Zdroj"
+				(path "/b0153651-e2ef-4a9d-ae62-4f00bceb77f7"
+					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Potentiometer")
+		(at 129.54 88.9 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(uuid "0e6558af-3387-43aa-86a5-9f5b2740849e")
 		(property "Reference" "RV1"
-			(at 132.08 87.6299 0)
+			(at 132.08 90.1701 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6093,7 +6045,7 @@
 			)
 		)
 		(property "Value" "10K"
-			(at 132.08 90.1699 0)
+			(at 132.08 87.6301 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6380,7 +6332,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Radial_D10.0mm_H12.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm"
 			(at 28.2448 124.46 0)
 			(effects
 				(font
@@ -6837,7 +6789,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Radial_D16.0mm_H25.0mm_P7.50mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D22.0mm_P10.00mm_SnapIn"
 			(at 69.5452 82.55 0)
 			(effects
 				(font
@@ -7165,6 +7117,80 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Potentiometer")
+		(at 129.54 101.6 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2c250f47-dde7-4d0b-a6c4-fed9cf53276a")
+		(property "Reference" "RV3"
+			(at 132.08 100.3299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "220R"
+			(at 132.08 102.8699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Potentiometer_THT:Potentiometer_Piher_PT-6-V_Vertical"
+			(at 129.54 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 129.54 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Potentiometer"
+			(at 129.54 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "70e2652f-ac87-4be1-9b33-79184a1cfbf2")
+		)
+		(pin "3"
+			(uuid "87821108-b25d-40b4-b459-c0656933e5e0")
+		)
+		(pin "1"
+			(uuid "a0de47cb-9a91-45e6-9788-589f4a5391f5")
+		)
+		(instances
+			(project "Zdroj"
+				(path "/b0153651-e2ef-4a9d-ae62-4f00bceb77f7"
+					(reference "RV3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 271.78 85.09 270)
 		(unit 1)
@@ -7444,6 +7470,7 @@
 	(symbol
 		(lib_id "Device:R")
 		(at 119.38 105.41 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7451,7 +7478,7 @@
 		(dnp no)
 		(uuid "3bf0958f-6cdb-4051-bb42-68b95344334f")
 		(property "Reference" "R8"
-			(at 121.92 104.1399 0)
+			(at 116.84 104.1399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7460,7 +7487,7 @@
 			)
 		)
 		(property "Value" "10K"
-			(at 121.92 106.6799 0)
+			(at 116.84 106.6799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7469,7 +7496,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 117.602 105.41 90)
+			(at 121.158 105.41 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7709,72 +7736,6 @@
 			(project "Zdroj"
 				(path "/b0153651-e2ef-4a9d-ae62-4f00bceb77f7"
 					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 171.45 124.46 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "43e13fff-489a-413a-96d3-3718560c196a")
-		(property "Reference" "#PWR08"
-			(at 171.45 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 171.45 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 171.45 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 171.45 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 171.45 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0226ce14-9912-4fe7-b608-60503400cfe6")
-		)
-		(instances
-			(project "Zdroj"
-				(path "/b0153651-e2ef-4a9d-ae62-4f00bceb77f7"
-					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -8988,76 +8949,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Trim")
-		(at 129.54 105.41 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6b2d0034-f2f4-4045-8a55-33de883b48e8")
-		(property "Reference" "R10"
-			(at 133.35 104.1399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "220R"
-			(at 133.35 106.6799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Potentiometer_THT:Potentiometer_Piher_PT-6-V_Vertical"
-			(at 127.762 105.41 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 129.54 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Trimmable resistor (preset resistor)"
-			(at 129.54 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2bbed769-c679-4dfd-bb56-19a12ecec4ee")
-		)
-		(pin "2"
-			(uuid "8d2127bf-fcfd-4892-a0f1-ffbbc24b58e1")
-		)
-		(instances
-			(project ""
-				(path "/b0153651-e2ef-4a9d-ae62-4f00bceb77f7"
-					(reference "R10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 29.21 148.59 0)
 		(unit 1)
@@ -9365,7 +9256,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P15.24mm_Horizontal"
 			(at 56.642 78.74 90)
 			(effects
 				(font
@@ -9589,7 +9480,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Radial_D6.3mm_H5.0mm_P2.50mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
 			(at 105.1052 119.38 0)
 			(effects
 				(font
@@ -10027,7 +9918,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Radial_D6.3mm_H5.0mm_P2.50mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
 			(at 257.5052 104.14 0)
 			(effects
 				(font
@@ -10071,7 +9962,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 113.03 101.6 270)
+		(at 109.22 101.6 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10079,7 +9970,7 @@
 		(dnp no)
 		(uuid "a76e14a7-0271-40f4-ab48-4fdc9d7b4fb3")
 		(property "Reference" "C6"
-			(at 113.03 109.22 90)
+			(at 109.22 109.22 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10087,7 +9978,7 @@
 			)
 		)
 		(property "Value" "330pF"
-			(at 113.03 106.68 90)
+			(at 109.22 106.68 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10095,7 +9986,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
-			(at 109.22 102.5652 0)
+			(at 105.41 102.5652 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10104,7 +9995,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 113.03 101.6 0)
+			(at 109.22 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10113,7 +10004,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 113.03 101.6 0)
+			(at 109.22 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10496,7 +10387,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Radial_D10.0mm_H12.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
 			(at 97.4852 54.61 0)
 			(effects
 				(font
@@ -10954,6 +10845,7 @@
 	(symbol
 		(lib_id "Device:R_Potentiometer")
 		(at 180.34 100.33 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10961,7 +10853,7 @@
 		(dnp no)
 		(uuid "e03fa813-8607-48a3-b779-5799d96e5cde")
 		(property "Reference" "RV2"
-			(at 177.8 99.0599 0)
+			(at 177.8 101.6001 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10970,7 +10862,7 @@
 			)
 		)
 		(property "Value" "10K"
-			(at 177.8 101.5999 0)
+			(at 177.8 99.0601 0)
 			(effects
 				(font
 					(size 1.27 1.27)
