@@ -143,6 +143,10 @@ _If you found this repo. because you need help with some homework, do not copy, 
       - Graph nodes can be "noisy"; visiting noisy nodes alerts the cat
       - Mouse must avoid positions reachable by the cat within constrained jumps
     - Uses multi-state per node storage and BFS with pruning to return (distance, noisy_used) for optimal path
+- Binary search tree with lazy deletion (hw05.c):
+    - Implements a BST that supports `ins K` and `del K` commands.
+    - Uses lazy deletion and periodically compacts the tree when the sum of deleted-node heights exceeds the sum of active-node heights.
+    - Compaction preserves pre-order of active nodes
 
 ### OSY - Shell & C
 - Shell Scripting:

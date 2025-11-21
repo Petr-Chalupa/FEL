@@ -7,5 +7,6 @@ venv/
 /out/
 *.o
 *.obj
+*.in
 *.out
 *.zip
