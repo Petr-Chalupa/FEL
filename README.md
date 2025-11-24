@@ -147,6 +147,9 @@ _If you found this repo. because you need help with some homework, do not copy, 
     - Implements a BST that supports `ins K` and `del K` commands.
     - Uses lazy deletion and periodically compacts the tree when the sum of deleted-node heights exceeds the sum of active-node heights.
     - Compaction preserves pre-order of active nodes
+- Non-deterministic Turing machine simulator (hw06.c):
+  - Decodes a compact machine encoding into transitions and simulates the machine
+  - Checks whether the machine is deterministic and explores branching configurations using BFS
 
 ### OSY - Shell & C
 - Shell Scripting:
@@ -179,7 +182,6 @@ _If you found this repo. because you need help with some homework, do not copy, 
     - Built with no libc
 
 ### KEO
-- PCB Project:
-  - Board design using KiCad
-  - Realization
-  - Documentation
+- Complete PCB project design and realization
+- Documentation: [`zdroj_G400.pdf`](KEO/zdroj_G400.pdf), [`presentation.pdf`](KEO/presentation.pdf), [`report.pdf`](KEO/report.pdf)
+- Design files: [`Zdroj.kicad_sch`](KEO/Zdroj/Zdroj.kicad_sch), [`Zdroj.kicad_pcb`](KEO/Zdroj/Zdroj.kicad_pcb), [`Zdroj.kicad_pro`](KEO/Zdroj/Zdroj.kicad_pro)
