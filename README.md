@@ -73,7 +73,7 @@ _If you found this repo. because you need help with some homework, do not copy, 
     - Score tracking and high scores
     - Modular code structure for hardware abstraction
   - _Note: Only the following files are my original work:_
-    - `pong.c`, `utils.c`, `IO_utils.c`, `logo.c` and their respective header files in `include/`
+    - _`pong.c`, `utils.c`, `IO_utils.c`, `logo.c` and their respective header files in `include/`_
     - _Other files (e.g., hardware abstraction, font data) were provided as part of the assignment framework._
 
 ### FUP - Racket & Haskell
@@ -147,9 +147,17 @@ _If you found this repo. because you need help with some homework, do not copy, 
     - Implements a BST that supports `ins K` and `del K` commands.
     - Uses lazy deletion and periodically compacts the tree when the sum of deleted-node heights exceeds the sum of active-node heights.
     - Compaction preserves pre-order of active nodes
-- Non-deterministic Turing machine simulator (hw06.c):
+- Turing machine simulator (hw06.c):
   - Decodes a compact machine encoding into transitions and simulates the machine
   - Checks whether the machine is deterministic and explores branching configurations using BFS
+- Irrigatio (hw07.c):
+  - Selects high-value horizontal/vertical segments using prefix-sums
+  - Sorts segments by weight and combines them via DP for optimal total value
+- Totem Buyer (hw08.c):
+  - Maximizes profit from buying totems between villages and selling them
+  - Villages merge when their separating totem is purchased
+  - Purchase cost depends on warrior count difference between villages
+  - Similar structure to matrix chain multiplication problem
 
 ### OSY - Shell & C
 - Shell Scripting:
@@ -180,8 +188,20 @@ _If you found this repo. because you need help with some homework, do not copy, 
     - Reads unsigned integers from stdin and prints them as hexadecimal
     - Implementation using direct syscalls
     - Built with no libc
+- Nova Microkernel Assignments:
+  - nbrk system call (ec_syscall.cc):
+    - Handles dynamic memory with page table operations and allocation/deallocation
+  - User-space memory allocator (mem_alloc.c):
+    - Custom heap management for user programs
+    - Integrates with kernel page management
+  - Thread management system calls (ec_syscall.cc):
+    - thread_create: Creates new threads with user-provided stack
+    - thread_yield: Switches execution context to the next thread in buffer
+    - Circular queue scheduler
+  - _Note: Nova kernel framework, build system, and infrastructure were provided; my contributions are `ec_syscall.cc` and `mem_alloc.c`._
+    - _The kernel framework provides: CPU/MMU abstraction (`cpu.h`, `ptab.h`), physical memory manager (`kalloc.h`), execution context infrastructure (`ec.h`)..._
 
 ### KEO
 - Complete PCB project design and realization
-- Documentation: [`zdroj_G400.pdf`](KEO/zdroj_G400.pdf), [`presentation.pdf`](KEO/presentation.pdf), [`report.pdf`](KEO/report.pdf)
+- Documentation: [`Prezentace.pdf`](KEO/Prezentace.pdf), [`Protokol.pdf`](KEO/Protokol.pdf), [`Schema.pdf`](KEO/Schema.pdf), [`DPS.pdf`](KEO/DPS.pdf)
 - Design files: [`Zdroj.kicad_sch`](KEO/Zdroj/Zdroj.kicad_sch), [`Zdroj.kicad_pcb`](KEO/Zdroj/Zdroj.kicad_pcb), [`Zdroj.kicad_pro`](KEO/Zdroj/Zdroj.kicad_pro)

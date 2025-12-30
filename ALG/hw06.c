@@ -51,7 +51,6 @@ typedef struct {
 typedef struct {
   Tape *tape;
   int state;
-  unsigned long tape_hash;
 } Configuration;
 
 typedef struct {
@@ -95,7 +94,6 @@ void Tape__move(Tape *t, Direction dir);
 void Tape__expand(Tape *t, Direction dir);
 Tape *Tape__copy(Tape *t);
 void Tape__print(Tape *t, Symbol *symbols);
-unsigned long Tape__hash(Tape *t);
 //
 TM *TM__init();
 void TM__free(TM *tm);
@@ -225,7 +223,7 @@ void read_machine_code(TM *tm) {
   // Skip initial "111"
   if (size < 3) {
     free(code);
-    return;
+    Error__throw(E_DECODEFAIL);
   }
   s += 3;
 
@@ -491,27 +489,6 @@ void Tape__print(Tape *t, Symbol *symbols) {
   printf("\n");
 }
 
-unsigned long Tape__hash(Tape *t) {
-  unsigned long hash = 5381;
-
-  int first = 0;
-  int last = t->capacity - 1;
-
-  while (first <= last && t->cells[first] == blank_symbol_idx)
-    first++;
-  while (last >= first && t->cells[last] == blank_symbol_idx)
-    last--;
-
-  for (int i = first; i <= last; i++) {
-    hash = ((hash << 5) + hash) + t->cells[i];
-  }
-
-  int relative_head = (first <= last) ? (t->head - first) : 0;
-  hash = ((hash << 5) + hash) + relative_head;
-
-  return hash;
-}
-
 TM *TM__init() {
   TM *tm = malloc(sizeof(TM));
   if (tm == NULL) Error__throw(E_MEMALLOC);
@@ -552,7 +529,7 @@ bool TM__is_deterministic(TM *tm) {
 
 void TM__simulate(TM *tm, Tape **final_tape) {
   Queue *queue = Queue__init();
-  Configuration start = {.tape = Tape__copy(tm->tape), .state = START_STATE, .tape_hash = Tape__hash(tm->tape)};
+  Configuration start = {.tape = Tape__copy(tm->tape), .state = START_STATE};
   Queue__push(queue, &start);
 
   while (!Queue__is_empty(queue)) {
@@ -571,9 +548,8 @@ void TM__simulate(TM *tm, Tape **final_tape) {
         Tape *new_tape = Tape__copy(current->tape);
         Tape__write(new_tape, e->w_symbol_idx);
         Tape__move(new_tape, e->dir);
-        unsigned long new_hash = Tape__hash(new_tape);
 
-        Configuration next = {.tape = new_tape, .state = e->end_state, .tape_hash = new_hash};
+        Configuration next = {.tape = new_tape, .state = e->end_state};
         Queue__push(queue, &next);
       }
     }
