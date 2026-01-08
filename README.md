@@ -25,12 +25,13 @@ _If you found this repo. because you need help with some homework, do not copy, 
   - File operations and parsing (hw03)
   - Data structures implementation (hw04, hw05)
   - Memory management (hw06)
+  - Custom grep implementation (hw07)
 - Graph Algorithms ~ implementations of fundamental graph operations and algorithms:
-  - Graph representation and manipulation (hw07, hw08)
+  - Queue implemetation (hw08)
   - File I/O for both text and binary formats (hw09)
   - Memory management with dynamic allocation (hw09)
   - Implementations of various graph algorithms (hw10)
-  - _Note: hw10 framework was provided, my contribution was integration of specific functions (pq_update, dijkstra.c, dijkstra_set_graph & dijkstra_get_solution, graph.c)_
+  - _Note: hw10 framework was provided, my contribution was integration of specific functions (pq_update, dijkstra_set_graph, dijkstra_get_solution, graph.c)_
 
 ### RPH - Python
 - Spam Filter ~ a modular email classification system with various spam detection methods:

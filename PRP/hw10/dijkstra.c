@@ -105,7 +105,7 @@ _Bool dijkstra_set_graph(int e, int edges[][3], void *dijkstra) {
       dij->nodes[i].cost = -1;
     }
 
-    // 3nd add edges to the nodes
+    // 3rd add edges to the nodes
     for (size_t i = 0; i < dij->graph->size; i += 3) {
       int cur = dij->graph->edges[i];
       if (dij->nodes[cur].edge_start == -1) { // first edge
@@ -142,8 +142,7 @@ _Bool dijkstra_solve(void *dijkstra, int label) {
         to->cost = cost;
         to->parent = cur_label;
         pq_push(pq, edge[1], cost);
-      } else if (cost <
-                 to->cost) { // already relaxed check if we can make a shortcut to child node via the current node
+      } else if (cost < to->cost) { // already relaxed check if we can make a shortcut to child node via the current node
         to->cost = cost;
         to->parent = cur_label;
         pq_update(pq, edge[1], cost);
