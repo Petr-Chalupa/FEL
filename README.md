@@ -159,6 +159,11 @@ _If you found this repo. because you need help with some homework, do not copy, 
   - Villages merge when their separating totem is purchased
   - Purchase cost depends on warrior count difference between villages
   - Similar structure to matrix chain multiplication problem
+- Triples (exam.c):
+  - Finds non-overlapping 3-cell segments (horizontal and vertical) in a colored matrix
+  - Scores each segment: 3 points for all same color, 1 point for 2 same colors, 0 points otherwise
+  - Uses backtracking to maximize total score by selecting optimal segment combinations
+  - Includes pruning optimization with greedy upper bound calculation for performance
 
 ### OSY - Shell & C
 - Shell Scripting:
