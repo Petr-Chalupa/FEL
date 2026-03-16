@@ -1,8 +1,10 @@
 .vs/
 .vscode/
+.idea/
 dist/
 __pycache__/
 build/
+*build*/
 venv/
 /out/
 *.o
@@ -10,3 +12,8 @@ venv/
 *.in
 *.out
 *.zip
+
+#remove
+/PDV/LAB/
+/PDV/CMakeLists.txt
+/ZUI/*.ipynb

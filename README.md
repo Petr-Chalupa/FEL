@@ -1,14 +1,22 @@
 <!-- omit from toc -->
 # FEL
-
-This repository serves as a part of my portfolio. \
-Link to my university: [fel.cvut.cz](https://fel.cvut.cz)
-
-_If you found this repo. because you need help with some homework, do not copy, just get an inspiration :) \
-[LICENSE](LICENSE.md)_
+This repository contains selected coursework completed during my studies in
+OI at CTU FEL. \
+_If you found this repo. because you need help with some homework, do not copy, just get an inspiration :)_
 
 <!-- omit from toc -->
-## Portfolio
+## Theoretical Foundations
+- LAG - Linear Algebra
+- DMA - Discrete Mathematics
+- LGR - Logic and Graph Theory
+- MA1, MA2 - Mathematical Analysis I & II
+- PST - Probability and Statistics
+- NUM - Numerical Methods
+- OPT - Optimization
+- PKS - Computer and Communication Networks
+
+<!-- omit from toc -->
+## Programming & Engineering Courses
 - [PRP - C](#prp---c)
 - [RPH - Python](#rph---python)
 - [PJV - Java](#pjv---java)
@@ -17,7 +25,10 @@ _If you found this repo. because you need help with some homework, do not copy, 
 - [PSIA - C](#psia---c)
 - [ALG - C](#alg---c)
 - [OSY - Shell \& C](#osy---shell--c)
-- [KEO](#keo)
+- [KEO - Hardware](#keo---hardware)
+- [PDV - C++](#pdv---c)
+- [ZUI - Python](#zui---python)
+- [DBS - Java \& SQL](#dbs---java--sql)
 
 ### PRP - C
 - Command Line Tools ~ utilities demonstrating C programming concepts:
@@ -42,7 +53,7 @@ _If you found this repo. because you need help with some homework, do not copy, 
 - Reversi ~ a player implementation for the Reversi board game:
   - Heuristic-based move selection
   - Position rating matrix
-  - Valid move detection with weighted decision making
+  - Valid move detection with weighted decision-making
   - Complete game rules implementation
 
 ### PJV - Java
@@ -182,7 +193,7 @@ _If you found this repo. because you need help with some homework, do not copy, 
     - Integration with provided GCD calculator
     - _Note: `nsd_src` (GCD calculator) was provided as part of the assignment_
   - Producer-Consumer Threading (hw04):
-    - Multi-threaded word processing with shared list
+    - Multithreaded word processing with shared list
     - Mutex-protected stdout and list operations
     - Conditional variables for synchronization
   - Factory Simulation (hw05):
@@ -207,7 +218,27 @@ _If you found this repo. because you need help with some homework, do not copy, 
   - _Note: Nova kernel framework, build system, and infrastructure were provided; my contributions are `ec_syscall.cc` and `mem_alloc.c`._
     - _The kernel framework provides: CPU/MMU abstraction (`cpu.h`, `ptab.h`), physical memory manager (`kalloc.h`), execution context infrastructure (`ec.h`)..._
 
-### KEO
+### KEO - Hardware
 - Complete PCB project design and realization
 - Documentation: [`Prezentace.pdf`](KEO/Prezentace.pdf), [`Protokol.pdf`](KEO/Protokol.pdf), [`Schema.pdf`](KEO/Schema.pdf), [`DPS.pdf`](KEO/DPS.pdf)
 - Design files: [`Zdroj.kicad_sch`](KEO/Zdroj/Zdroj.kicad_sch), [`Zdroj.kicad_pcb`](KEO/Zdroj/Zdroj.kicad_pcb), [`Zdroj.kicad_pro`](KEO/Zdroj/Zdroj.kicad_pro)
+
+### PDV - C++
+- Parallel:
+  - Producer-Consumer Threading (hw01):
+    - Generic thread pool template with parametrized job and worker types
+    - Producer-consumer coordination without busy-waiting
+    - Parallel processing
+    - _Note: `main.cpp` was provided; my implementation was `ThreadPool.h`._
+  - Vector Sum (hw02):
+    - Implementation of parallel array summation using various OpenMP scheduling strategies.
+    - Comparison of `static` vs. `dynamic` scheduling performance for uneven workloads.
+  - Lock-Free BST (hw03):
+    - Implementation of a thread-safe, lock-free BST using atomic operations.
+- Distributed:
+
+### ZUI - Python
+
+### DBS - Java & SQL
+
+

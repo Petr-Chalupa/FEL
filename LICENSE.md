@@ -21,8 +21,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 **Academic Integrity Notice:**
-This repository contains academic coursework. If you are a student:
-1. Do not copy code directly for assignments
-2. Use only as a reference for learning
-3. Follow your institution's academic integrity policies
-4. Cite any referenced code according to your course requirements
+This repository contains coursework solutions. If you are currently enrolled
+in a related course, use this material responsibly and in accordance with your
+institution’s academic integrity policies.
