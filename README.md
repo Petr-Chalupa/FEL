@@ -229,13 +229,20 @@ _If you found this repo. because you need help with some homework, do not copy, 
     - Generic thread pool template with parametrized job and worker types
     - Producer-consumer coordination without busy-waiting
   - Vector Sum (hw02):
-    - Implementation of parallel array summation using various OpenMP scheduling strategies.
-    - Comparison of `static` vs. `dynamic` scheduling performance for uneven workloads.
+    - Parallel array summation using various OpenMP scheduling strategies
+    - Comparison of `static` vs. `dynamic` scheduling performance for uneven workloads
+    - Analysis of load balancing trade-offs
   - Lock-Free BST (hw03):
-    - Implementation of a thread-safe, lock-free BST using atomic operations.
+    - Thread-safe binary search tree using atomic operations and lock-free synchronization
+    - Lock-free insertion and deletion with compare-and-swap operations
 - Distributed:
 
 ### ZUI - Python
+- Blocks World Solver (hw01):
+  - A* search algorithm with custom heuristic for solving the blocks world puzzle
+  - Heuristic based on correct prefix matching of goal stacks
+  - Finds optimal sequence of block moves to reach goal configuration
+  - _Note: blockworld.py environment was provided as part of the assignment_
 
 ### DBS - Java & SQL
 
