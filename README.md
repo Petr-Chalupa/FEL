@@ -228,8 +228,6 @@ _If you found this repo. because you need help with some homework, do not copy, 
   - Producer-Consumer Threading (hw01):
     - Generic thread pool template with parametrized job and worker types
     - Producer-consumer coordination without busy-waiting
-    - Parallel processing
-    - _Note: `main.cpp` was provided; my implementation was `ThreadPool.h`._
   - Vector Sum (hw02):
     - Implementation of parallel array summation using various OpenMP scheduling strategies.
     - Comparison of `static` vs. `dynamic` scheduling performance for uneven workloads.
