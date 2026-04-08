@@ -26,7 +26,7 @@ _If you found this repo. because you need help with some homework, do not copy, 
 - [ALG - C](#alg---c)
 - [OSY - Shell \& C](#osy---shell--c)
 - [KEO - Hardware](#keo---hardware)
-- [PDV - C++](#pdv---c)
+- [PDV - C++ \& Java](#pdv---c--java)
 - [ZUI - Python](#zui---python)
 - [DBS - Java \& SQL](#dbs---java--sql)
 
@@ -223,8 +223,8 @@ _If you found this repo. because you need help with some homework, do not copy, 
 - Documentation: [`Prezentace.pdf`](KEO/Prezentace.pdf), [`Protokol.pdf`](KEO/Protokol.pdf), [`Schema.pdf`](KEO/Schema.pdf), [`DPS.pdf`](KEO/DPS.pdf)
 - Design files: [`Zdroj.kicad_sch`](KEO/Zdroj/Zdroj.kicad_sch), [`Zdroj.kicad_pcb`](KEO/Zdroj/Zdroj.kicad_pcb), [`Zdroj.kicad_pro`](KEO/Zdroj/Zdroj.kicad_pro)
 
-### PDV - C++
-- Parallel:
+### PDV - C++ & Java
+- Parallel (C++):
   - Producer-Consumer Threading (hw01):
     - Generic thread pool template with parametrized job and worker types
     - Producer-consumer coordination without busy-waiting
@@ -235,7 +235,13 @@ _If you found this repo. because you need help with some homework, do not copy, 
   - Lock-Free BST (hw03):
     - Thread-safe binary search tree using atomic operations and lock-free synchronization
     - Lock-free insertion and deletion with compare-and-swap operations
-- Distributed:
+  - Parallel Database Query (hw04):
+    - Evaluation of universal and existential predicates
+    - Early termination using #pragma omp cancel for
+  - Parallel Radix Sort (hw05):
+    - Recursive MSD radix sort implementation for strings
+    - Parallelized using recursive sub-sorting of buckets
+- Distributed (Java):
 
 ### ZUI - Python
 - Blocks World Solver (hw01):
