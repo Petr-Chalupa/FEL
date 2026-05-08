@@ -15,5 +15,7 @@ venv/
 
 #remove
 /PDV/LAB/
+/PDV/LAB-DV/
 /PDV/CMakeLists.txt
 /ZUI/*.ipynb
+*.iml
