@@ -242,12 +242,22 @@ _If you found this repo. because you need help with some homework, do not copy, 
     - Recursive MSD radix sort implementation for strings
     - Parallelized using recursive sub-sorting of buckets
 - Distributed (Java):
+  - BFS and IDDFS (hw06):
+    - Parallel implementations of breadth-first search and iterative deepening depth-first search
+    - _Note: Framework files were provided as part of the assignment_
+  - SWIM Protocol (hw07):
+    - Implementation of the SWIM failure detection protocol with custom active strategy and ping message handling
+    - _Note: Framework files in dsand/ and other files in swim/ (except ActStrategy.java and PingMessage.java) were provided as part of the assignment_
 
 ### ZUI - Python
 - Blocks World Solver (hw01):
   - A* search algorithm with custom heuristic for solving the blocks world puzzle
   - Heuristic based on correct prefix matching of goal stacks
   - Finds optimal sequence of block moves to reach goal configuration
+  - _Note: blockworld.py environment was provided as part of the assignment_
+- Tabular Q-Learning (hw02):
+  - Reinforcement learning agent using tabular Q-learning to solve the blocks world puzzle
+  - Custom implementation for training and evaluation
   - _Note: blockworld.py environment was provided as part of the assignment_
 
 ### DBS - Java & SQL

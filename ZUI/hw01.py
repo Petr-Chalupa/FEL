@@ -1,4 +1,4 @@
-from blockworld import BlockWorld
+from ZUI.blockworld import BlockWorld
 import heapq
 
 
