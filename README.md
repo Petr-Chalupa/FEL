@@ -28,7 +28,7 @@ _If you found this repo. because you need help with some homework, do not copy, 
 - [KEO - Hardware](#keo---hardware)
 - [PDV - C++ \& Java](#pdv---c--java)
 - [ZUI - Python](#zui---python)
-- [DBS - Java \& SQL](#dbs---java--sql)
+- [DBS - SQL \& Java](#dbs---sql--java)
 
 ### PRP - C
 - Command Line Tools ~ utilities demonstrating C programming concepts:
@@ -263,6 +263,9 @@ _If you found this repo. because you need help with some homework, do not copy, 
   - Custom implementation for training and evaluation
   - _Note: blockworld.py environment was provided as part of the assignment_
 
-### DBS - Java & SQL
+### DBS - SQL & Java
+- Database Systems ~ SQL & Java assignments demonstrating relational modeling, ER design, and query construction
+- Practical SQL problem solving and database design
+  - _Note: `CP5.java` is the main important class in this section of assignment_
 
 
