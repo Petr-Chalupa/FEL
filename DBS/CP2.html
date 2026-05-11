@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="author" content="Chalupa, Ledinská"/>
+
+    <title>CP2</title>
+
+    <style>
+        :root {
+            box-sizing: border-box;
+            font-synthesis: none;
+            text-rendering: optimizeLegibility;
+        }
+
+        * {
+            box-sizing: inherit;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Courier New", monospace;
+            overflow-x: hidden;
+        }
+
+        body > ul > li {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+<ul>
+    <!-- Person related -->
+
+    <li>Person(<u>name, birth_date</u>, <u>phone_number</u>)</li>
+
+    <li>
+        Customer(<u>phone_number</u>, address)
+        <ul>
+            <li>FK: phone_number ⊆ Person(phone_number)</li>
+        </ul>
+    </li>
+
+    <li>
+        Address(<u>phone_number, house_number, street, city</u>)
+        <ul>
+            <li>FK: phone_number ⊆ Customer(phone_number)</li>
+        </ul>
+    </li>
+
+    <li>
+        Employee(<u>phone_number</u>, #_of_delivered_packages)
+        <ul>
+            <li>FK: phone_number ⊆ Person(phone_number)</li>
+        </ul>
+    </li>
+
+    <li>
+        IsSuperior(<u>employee, superior</u>)
+        <ul>
+            <li>FK: employee ⊆ Employee(phone_number)</li>
+            <li>FK: superior ⊆ Employee(phone_number)</li>
+        </ul>
+    </li>
+
+    <!-- Location related -->
+
+    <li>Location(<u>address</u>)</li>
+
+    <li>
+        Vehicle(<u>address</u>, <u>licence_plate</u>, <u>employee</u>, type)
+        <ul>
+            <li>FK: address ⊆ Location(address)</li>
+            <li>FK: employee ⊆ Employee(phone_number)</li>
+        </ul>
+    </li>
+
+    <li>
+        Warehouse(<u>address</u>, capacity, building_size)
+        <ul>
+            <li>FK: address ⊆ Location(address)</li>
+        </ul>
+    </li>
+
+    <!-- Package related -->
+
+    <li>
+        Package(<u>deliver_address, timestamp, sender</u>, weight)
+        <ul>
+            <li>FK: sender ⊆ Customer(phone_number)</li>
+        </ul>
+    </li>
+
+    <li>
+        IsIn(<u>pkg_deliver_address, pkg_timestamp, pkg_sender, location</u>)
+        <ul>
+            <li>FK: (pkg_deliver_address, pkg_timestamp, pkg_sender) ⊆ Package(deliver_address, timestamp, sender)</li>
+            <li>FK: location ⊆ Location(address)</li>
+        </ul>
+    </li>
+
+    <li>
+        Delivers(<u>pkg_deliver_address, pkg_timestamp, pkg_sender, receiver, employee</u>)
+        <ul>
+            <li>FK: (pkg_deliver_address, pkg_timestamp, pkg_sender) ⊆ Package(deliver_address, timestamp, sender)</li>
+            <li>FK: receiver ⊆ Customer(phone_number)</li>
+            <li>FK: employee ⊆ Employee(phone_number)</li>
+        </ul>
+    </li>
+</ul>
+</body>
+</html>
