@@ -247,7 +247,10 @@ _If you found this repo. because you need help with some homework, do not copy, 
     - _Note: Framework files were provided as part of the assignment_
   - SWIM Protocol (hw07):
     - Implementation of the SWIM failure detection protocol with custom active strategy and ping message handling
-    - _Note: Framework files in dsand/ and other files in swim/ (except ActStrategy.java and PingMessage.java) were provided as part of the assignment_
+    - _Note: Framework files were provided as part of the assignment_
+  - Ricart-Agrawala Mutual Exclusion (hw08):
+    - Implementation of the Ricart-Agrawala algorithm for distributed mutual exclusion with logical clocks and message passing for critical sections coordination
+    - _Note: Framework files were provided as part of the assignment_
 
 ### ZUI - Python
 - Blocks World Solver (hw01):
