@@ -11,11 +11,4 @@ venv/
 *.obj
 *.in
 *.out
-*.zip
-
-#remove
-/PDV/LAB/
-/PDV/LAB-DV/
-/PDV/CMakeLists.txt
-/ZUI/*.ipynb
-*.iml
+*.zip 

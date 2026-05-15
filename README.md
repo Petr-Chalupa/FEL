@@ -251,6 +251,11 @@ _If you found this repo. because you need help with some homework, do not copy, 
   - Ricart-Agrawala Mutual Exclusion (hw08):
     - Implementation of the Ricart-Agrawala algorithm for distributed mutual exclusion with logical clocks and message passing for critical sections coordination
     - _Note: Framework files were provided as part of the assignment_
+  - RAFT Consensus (hw09):
+    - Implementation of the RAFT distributed consensus protocol for replicated state machines
+    - Leader election, log replication, and follower heartbeats with safety under message loss
+    - Message classes for vote requests/responses and append entries for cluster coordination
+    - _Note: Framework files were provided as part of the assignment_
 
 ### ZUI - Python
 - Blocks World Solver (hw01):
@@ -262,6 +267,10 @@ _If you found this repo. because you need help with some homework, do not copy, 
   - Reinforcement learning agent using tabular Q-learning to solve the blocks world puzzle
   - Custom implementation for training and evaluation
   - _Note: blockworld.py environment was provided as part of the assignment_
+- OX Game Solver (hw03):
+  - Implements Tic-Tac-Toe/OX game logic with self-play and move evaluation
+  - Uses Monte Carlo Tree Search guided by a neural network model for position assessment
+  - _Note: ox.py environment was provided as part of the assignment_
 
 ### DBS - SQL & Java
 - Database Systems ~ SQL & Java assignments demonstrating relational modeling, ER design, and query construction
